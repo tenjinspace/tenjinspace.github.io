@@ -1,13 +1,26 @@
-/*
-section {
-    height: 100vh;
-}
-*/
-
-section.blue {
-    background-color: blue;
+iframe {
+    width: 100%;
 }
 
-section.red {
-    background-color: red;
+nav.navbar {
+    border-bottom: solid 1px #121212;
+}
+
+.gradient-header-light-bg {
+    background: -webkit-linear-gradient(rgb(0, 22, 54), rgb(0, 99, 180));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-header-dark-bg {
+    background: -webkit-linear-gradient(rgb(174, 207, 255), rgb(0, 99, 180));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-image {
+    background-image: url(https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mwii/MWII-S02-ANNOUNCEMENT-002.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

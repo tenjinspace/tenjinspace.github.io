@@ -7,12 +7,13 @@
   <title>🥑 Avocado Team - CoD</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://kit.fontawesome.com/e5ff3b67d0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
 
       <strong class="navbar-item" href="https://github.com/tenjinspace/">🥑 Avocado Team - CoD</strong>
@@ -29,14 +30,15 @@
     </div>
   </nav>
 
-  <section class="hero has-background-black-bis is-fullheight-with-navbar">
+  <section class="hero has-background-black-bis is-fullheight">
     <div class="hero-body">
       <div class="container">
-        <p class="title has-text-grey-lighter is-italic" id="hero-title">Welcome!</p>
+        <p class="title has-text-grey-lighter is-italic animate__animated animate__fadeInLeft" id="hero-title">Welcome!
+        </p>
         <script src="assets/quote.js"></script>
-        <p class="subtitle has-text-grey-lighter">Sun Tzu</p>
-        <div class="buttons">
-          <a class="button" href="#season-02">
+        <p class="subtitle has-text-grey-lighter animate__animated animate__fadeInLeft">Sun Tzu</p>
+        <div class="buttons animate__animated animate__fadeInLeft">
+          <a class="button is-medium is-white animate__animated animate__shakeX animate__slow" href="#season-02">
             <span class="icon">
               <i class="fas fa-person-rifle"></i>
             </span>
@@ -49,14 +51,14 @@
 
   <section class="section is-large" id="season-02">
     <div class="container">
-      <h1 class="title">
+      <h1 class="title gradient-header-light-bg animate__animated animate__fadeInLeft">
         Warzone 2.0: Season 02
       </h1>
-      <p class="subtitle">
+      <p class="subtitle animate__animated animate__fadeInLeft">
         Say hello to <strong>Season 2</strong>! 🚀
       </p>
 
-      <div class="tile is-ancestor has">
+      <div class="tile is-ancestor animate__animated animate__fadeInLeft">
         <div class="tile is-parent">
           <article class="tile is-child box has-background-black-bis">
             <p class="title has-text-white">Udite, udite! <br />Ritorna Ritorno!</p>
@@ -93,8 +95,13 @@
         </div>
       </div>
 
-      <div class="buttons">
-        <a class="button" href="#poll">
+      <figure class="image box has-background-black-bis animate__animated animate__fadeInLeft">
+        <img
+          src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-S02-ANNOUNCEMENT-TOUT.jpg">
+      </figure>
+
+      <div class="buttons animate__animated animate__fadeInLeft">
+        <a class="button is-medium is-fullwidth is-black" href="#poll">
           <span class="icon">
             <i class="fas fa-gun"></i>
           </span>
@@ -108,42 +115,55 @@
 
   <section class="section is-large has-background-black-bis" id="poll">
     <div class="container">
-      <h1 class="title has-text-white">
+      <h2 class="title has-text-white gradient-header-dark-bg">
         Ci sei?
-      </h1>
+      </h2>
       <p class="subtitle has-text-white">
         Lo sappiamo che sei la solita <strong class="has-text-white">belina</strong> ma ci proviamo lo stesso. 🤷‍♂️
       </p>
-      <iframe
-        data-tally-src="https://tally.so/embed/3xrxXr?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-        loading="lazy" width="100%" height="670" frameborder="0" marginheight="0" marginwidth="0"
-        title="Warzone 2.0: Season 02"></iframe>
-      <script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () { "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) { e.src = e.dataset.tallySrc })) }; if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s); }</script>
-    <div class="buttons">
-          <a class="button" href="#results">
-            <span class="icon">
-              <i class="fas fa-gun"></i>
-            </span>
-            <span>Risultati del sondaggio</span>
-          </a>
-        </div>
+      <div class="box has-background-dark">
+        <iframe
+          data-tally-src="https://tally.so/embed/3xrxXr?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy" width="100%" height="601" frameborder="0" marginheight="0" marginwidth="0"
+          title="Warzone 2.0: Season 02"></iframe>
+        <script>
+          var d = document, w = "https://tally.so/widgets/embed.js", v = function () { "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) { e.src = e.dataset.tallySrc })) }; if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s); }
+        </script>
+      </div>
+      <div class="buttons">
+        <a class="button is-medium is-fullwidth is-white" href="#results">
+          <span class="icon">
+            <i class="fas fa-gun"></i>
+          </span>
+          <span>Risultati del sondaggio</span>
+        </a>
+      </div>
     </div>
+  </section>
+
+  <section class="section banner-image is-medium">
+
   </section>
 
   <section class="section is-large" id="results">
     <div class="container">
-      <h1 class="title">
+      <h2 class="title gradient-header-light-bg pb-1">
         Risultati del sondaggio
-      </h1>
-      <p class="subtitle">
-        Say hello to <strong>Season 2</strong>! 🚀
-      </p>
+      </h2>
+      <div class="box">
+        <iframe width="360" height="360" seamless frameborder="0" scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTSbwmMndGGnop4ahhGSD-2H1FViFwPb-U_8NUIYF0H2KwccZljPpDwgNo0ODsg7k3ZIegNJ5r7Oe-/pubchart?oid=874239875&amp;format=interactive"></iframe>
 
-      <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTSbwmMndGGnop4ahhGSD-2H1FViFwPb-U_8NUIYF0H2KwccZljPpDwgNo0ODsg7k3ZIegNJ5r7Oe-/pubchart?oid=874239875&amp;format=interactive"></iframe>
-    
-
+      </div>
+      <div class="box">
+        <h3 class="title pb-1">
+          Commenti extra
+        </h3>
+        <iframe width="360" height="720" seamless frameborder="0" scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTSbwmMndGGnop4ahhGSD-2H1FViFwPb-U_8NUIYF0H2KwccZljPpDwgNo0ODsg7k3ZIegNJ5r7Oe-/pubchart?oid=1571901467&amp;format=interactive"></iframe>
+      </div>
       <div class="buttons">
-        <a class="button" href="#poll">
+        <a class="button is-medium is-fullwidth is-black" href="#poll">
           <span class="icon">
             <i class="fas fa-gun"></i>
           </span>
